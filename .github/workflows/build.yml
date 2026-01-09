@@ -29,7 +29,7 @@ jobs:
             echo "output_file=dev-release-notes.json" >> $GITHUB_OUTPUT
           elif [[ "${{ github.ref }}" == refs/heads/release/* ]]; then
             echo "type=release" >> $GITHUB_OUTPUT
-            echo "output_file=prod-release-notes.json" >> $GITHUB_OUTPUT
+            echo "output_file=${{ github.ref_name }}-release-notes.json" >> $GITHUB_OUTPUT
           else
             echo "Unsupported branch"
             exit 1
@@ -40,6 +40,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BUILD_TYPE: ${{ steps.build-type.outputs.type }}
           OUTPUT_FILE: ${{ steps.build-type.outputs.output_file }}
+          BUILD_BRANCH: ${{ github.ref_name }}
         run: |
           bash .github/scripts/generate-release-notes.sh
 

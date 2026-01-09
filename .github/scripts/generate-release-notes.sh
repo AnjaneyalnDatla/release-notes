@@ -11,34 +11,45 @@ echo "=== Starting release notes generation of type: ${BUILD_TYPE} ==="
 # 2. For release builds get commits between last two tags
 # ============================================================================
 echo "=== Determining commit range ==="
-if [ "$BUILD_TYPE" = "daily" ]; then
-    echo "=== Daily build: Getting last successful workflow run ==="
-    START_REF=$(gh run list -w "build.yml" -b main -s success -L 1 \
-        --json headSha -q '.[0].headSha // ""')
+# if [ "$BUILD_TYPE" = "daily" ]; then
+#     echo "=== Daily build: Getting last successful workflow run ==="
+#     START_REF=$(gh run list -w "build.yml" -b main -s success -L 1 \
+#         --json headSha -q '.[0].headSha // ""')
 
-    if [ -z "$START_REF" ]; then
-        echo "=== Daily build: Falling back to first commit as there are no previous successful runs ==="
+#     if [ -z "$START_REF" ]; then
+#         echo "=== Daily build: Falling back to first commit as there are no previous successful runs ==="
+#         START_REF=$(git rev-list --max-parents=0 HEAD)
+#     fi
+#     END_REF="HEAD"
+
+# else
+#     echo "=== Release build: Getting commits between last two tags ==="
+#     TAGS=($(gh release list --limit 2 --json tagName -q '.[].tagName'))
+
+#     if [ ${#TAGS[@]} -ge 2 ]; then
+#         START_REF="${TAGS[1]}"
+#         END_REF="${TAGS[0]}"
+#     elif [ ${#TAGS[@]} -eq 1 ]; then
+#         echo "=== Release build: Only one tag found, using commits from first commit to that tag ==="
+#         START_REF=$(git rev-list --max-parents=0 HEAD)
+#         END_REF="${TAGS[0]}"
+#     else
+#         echo "=== Release build: No tags found, using last 10 commits as fallback ==="
+#         START_REF="HEAD~10"
+#         END_REF="HEAD"
+#     fi
+# fi
+
+echo "=== Daily build: Getting last successful workflow run ==="
+START_REF=$(gh run list -w "build.yml" -b "${BUILD_BRANCH}" -s success -L 1 \
+    --json headSha -q '.[0].headSha // ""')
+
+if [ -z "$START_REF" ]; then
+    echo "=== Daily build: Falling back to first commit as there are no previous successful runs ==="
         START_REF=$(git rev-list --max-parents=0 HEAD)
-    fi
-    END_REF="HEAD"
-
-else
-    echo "=== Release build: Getting commits between last two tags ==="
-    TAGS=($(gh release list --limit 2 --json tagName -q '.[].tagName'))
-
-    if [ ${#TAGS[@]} -ge 2 ]; then
-        START_REF="${TAGS[1]}"
-        END_REF="${TAGS[0]}"
-    elif [ ${#TAGS[@]} -eq 1 ]; then
-        echo "=== Release build: Only one tag found, using commits from first commit to that tag ==="
-        START_REF=$(git rev-list --max-parents=0 HEAD)
-        END_REF="${TAGS[0]}"
-    else
-        echo "=== Release build: No tags found, using last 10 commits as fallback ==="
-        START_REF="HEAD~10"
-        END_REF="HEAD"
-    fi
 fi
+END_REF="HEAD"
+
 echo "Commit range: ${START_REF}..${END_REF}"
 echo "=== Completed determining commit range ==="
 
@@ -97,9 +108,9 @@ while IFS='|' read -r sha author message; do
       if [[ "$message_upper" =~ DEFECT ]]; then
         echo "=== Defect commit found ==="
         defects=$(echo "$defects" | jq -c --argjson e "$entry" '. + [$e]')
-       else
-         echo "=== Non defect commit found ==="
-         stories=$(echo "$stories" | jq -c --argjson e "$entry" '. + [$e]')
+      else
+        echo "=== Non defect commit found ==="
+        stories=$(echo "$stories" | jq -c --argjson e "$entry" '. + [$e]')
       fi
 
 done < <(git log --no-merges --format="%H|%an|%s" ${START_REF}..${END_REF}) # Read commits in range, excluding merges
