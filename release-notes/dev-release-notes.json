@@ -1,6 +1,18 @@
 {
   "builds": [
     {
+      "timestamp": "2026-01-09T02:16:55Z",
+      "revision": "ee4b369e5483a8bb9c133d28fb6a8481bcd12b8b",
+      "stories": [
+        {
+          "description": "fix: Adding revision",
+          "branch": "fix/revision-setup",
+          "author": "anjaneya.datla@fbitn.com"
+        }
+      ],
+      "defects": []
+    },
+    {
       "timestamp": "2026-01-09T02:08:07Z",
       "stories": [],
       "defects": [
