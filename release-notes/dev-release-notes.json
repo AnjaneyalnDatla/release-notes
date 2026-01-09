@@ -1,6 +1,17 @@
 {
   "builds": [
     {
+      "timestamp": "2026-01-09T02:08:07Z",
+      "stories": [],
+      "defects": [
+        {
+          "description": "fix: DEFECT pickup",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-01-09T02:05:47Z",
       "stories": [
         {
