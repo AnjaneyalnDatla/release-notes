@@ -2,6 +2,34 @@
   "center": "Policy Center",
   "builds": [
     {
+      "timestamp": "2026-01-09T15:39:21Z",
+      "revision": "38595a5da3611975eece5fa549ddb2a38b65b493",
+      "stories": [
+        {
+          "description": "feat: commit 5",
+          "branch": "feature/commit5",
+          "author": "anjaneya.datla@fbitn.com"
+        },
+        {
+          "description": "feat: Commit 4",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        },
+        {
+          "description": "feat: removing trigger",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        }
+      ],
+      "defects": [
+        {
+          "description": "Defect commit 6",
+          "branch": "fix/commitdefect-6",
+          "author": "anjaneya.datla@fbitn.com"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-01-09T15:18:40Z",
       "revision": "63869a720445c96c1d0d5822580f42b9c809bfa8",
       "stories": [
@@ -67711,48 +67739,6 @@
       ],
       "defects": [],
       "revision": "7a9dcb486ced897315a0e62959e207147c0f84c8"
-    },
-    {
-      "timestamp": "2025-10-11 03:47:51",
-      "stories": [
-        {
-          "description": "GSS-30082_code changes to display AutoIncPercent as per effective date",
-          "branch": "",
-          "author": "Maddakam.Kanchana"
-        },
-        {
-          "description": "GSS-23545 Rewrite available type changes",
-          "branch": "",
-          "author": "Iswarya Asokan"
-        },
-        {
-          "description": "GSS-23545 corrected Incorrect dates for rewrite new term",
-          "branch": "",
-          "author": "Iswarya Asokan"
-        },
-        {
-          "description": "GSS-30710 : PO_PE - Persist Adjusted Insurance Score at PolicyPeriod (#7088)",
-          "branch": "",
-          "author": "Karthik Sakthivel"
-        },
-        {
-          "description": "GSS-30082 - Apply value up from 3% to 5% if policy effective date is greater than 2/1/2026",
-          "branch": "",
-          "author": "Maddakam.Kanchana"
-        },
-        {
-          "description": "GSS-30082 - Apply value up from 3% to 5% if policy effective date is greater than 2/1/2026",
-          "branch": "",
-          "author": "Maddakam.Kanchana"
-        },
-        {
-          "description": "GSS-30921 - Allow Exposure and Building location change during policy change with permission",
-          "branch": "",
-          "author": "Avik Chatterjee"
-        }
-      ],
-      "defects": [],
-      "revision": "21eda0b9b8c0e84857ecacd01f4dd49dfc81a173"
     }
   ]
 }
