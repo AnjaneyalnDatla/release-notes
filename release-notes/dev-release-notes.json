@@ -2,6 +2,43 @@
   "center": "Policy Center",
   "builds": [
     {
+      "timestamp": "2026-01-09T19:04:20Z",
+      "revision": "ff3f8dfe69ab9270f797f4da5750beac8533d467",
+      "stories": [
+        {
+          "description": "feat: Adding commit 10",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        },
+        {
+          "description": "feat: Adding commit 9",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        },
+        {
+          "description": "feat: Adding commit 8",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        },
+        {
+          "description": "release notes",
+          "branch": "release/1.0.0",
+          "author": "anjaneya.datla@fbitn.com"
+        },
+        {
+          "description": "adding commit 7",
+          "branch": "release/1.0.0",
+          "author": "anjaneya.datla@fbitn.com"
+        },
+        {
+          "description": "fix: using the same process for commit rang",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        }
+      ],
+      "defects": []
+    },
+    {
       "timestamp": "2026-01-09T15:39:21Z",
       "revision": "38595a5da3611975eece5fa549ddb2a38b65b493",
       "stories": [
@@ -67727,18 +67764,6 @@
       ],
       "defects": [],
       "revision": "c518acf946bb6c9e9d749c17b366fa451d74637e"
-    },
-    {
-      "timestamp": "2025-10-13 04:17:58",
-      "stories": [
-        {
-          "description": "GSS-30082_code changes to update LOB code (#7104)",
-          "branch": "(HEAD, origin/release/4.9.0)",
-          "author": "Maddakam Kanchana"
-        }
-      ],
-      "defects": [],
-      "revision": "7a9dcb486ced897315a0e62959e207147c0f84c8"
     }
   ]
 }
