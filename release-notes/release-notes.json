@@ -2,6 +2,18 @@
   "center": "Policy Center",
   "builds": [
     {
+      "timestamp": "2026-01-10T16:48:42Z",
+      "revision": "69832472717dc744ebda4006157f8a51a65963f7",
+      "stories": [
+        {
+          "description": "adding cat at the action level",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        }
+      ],
+      "defects": []
+    },
+    {
       "timestamp": "2026-01-10T16:43:08Z",
       "revision": "ab32a45241b4504b4afa4399c13df85dc4d0c59f",
       "stories": [
@@ -67772,23 +67784,6 @@
       ],
       "defects": [],
       "revision": "1deabdbed91ec1dc4b81a844a7d54545367fb80e"
-    },
-    {
-      "timestamp": "2025-10-25 03:47:09",
-      "stories": [
-        {
-          "description": "GSS-29538 Modify PLI integration to only run at New Business and Renewal. (#7221)",
-          "branch": "(HEAD, origin/release/4.9.0)",
-          "author": "Rama Neeli"
-        },
-        {
-          "description": "GSS-29397 - GSS-31379: Able to edit the Dwelling type field during Change/Renewal transaction (VAL-PL-536) (#7217)",
-          "branch": "",
-          "author": "Pravallika Madhavarapu"
-        }
-      ],
-      "defects": [],
-      "revision": "8ffa8d2089cb8259b1083e3ff503771e5b1671d5"
     }
   ]
 }
