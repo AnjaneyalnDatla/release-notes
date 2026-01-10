@@ -1,7 +1,7 @@
 name: 'Create release'
 description: > 
   Create release notes json file specific to gudiewire application
-author: 'TEST-IW'
+author: 'FBITN DevOps Team'
 inputs:
   RELEASE_VERSION: 
     description: The version of release to add as revision

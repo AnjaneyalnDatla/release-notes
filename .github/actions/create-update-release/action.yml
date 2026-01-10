@@ -2,7 +2,7 @@ name: 'Create release'
 description: > 
   Create a GitHub release with the provided artifacts, and generates release notes 
   based on the commits between the latest and the target branch
-author: 'TEST-IW'
+author: 'FBITN DevOps Team'
 inputs:
   name:
     description: >
