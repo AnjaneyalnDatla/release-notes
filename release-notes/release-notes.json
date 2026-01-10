@@ -2,6 +2,18 @@
   "center": "Policy Center",
   "builds": [
     {
+      "timestamp": "2026-01-10T16:35:26Z",
+      "revision": "ae7255129bb2b0024e7dafa7e6717f30c329ff3a",
+      "stories": [
+        {
+          "description": "bumping version to v4.0",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        }
+      ],
+      "defects": []
+    },
+    {
       "timestamp": "2026-01-10T16:33:14Z",
       "revision": "9fa3d45904c1b6df610b6e8d1a6a4fafdb738f12",
       "stories": [
@@ -67792,33 +67804,6 @@
       ],
       "defects": [],
       "revision": "34269f90efd0489cd4f8eb246bfc976b131ec210"
-    },
-    {
-      "timestamp": "2025-10-22 03:47:09",
-      "stories": [
-        {
-          "description": "GSS-27114 - Combine Insurview and Insurance Score(NCF) calls _PO (#7182)",
-          "branch": "(HEAD, origin/release/4.9.0)",
-          "author": "Pavani Raghupathi"
-        },
-        {
-          "description": "GSS-30082_updated fix for building limit calculation (#7184)",
-          "branch": "",
-          "author": "Maddakam Kanchana"
-        },
-        {
-          "description": "GSS26925 :UW require an option to add Additional Interest on Special Class for CPP (#7150)",
-          "branch": "Feature/GSS-20226_UAT",
-          "author": "Chirivella Sreeja"
-        },
-        {
-          "description": "GSS-30369: Modify Complexity Model for Property and Auto Lines of Business (#7154)",
-          "branch": "",
-          "author": "Vishnu Vyachalapu"
-        }
-      ],
-      "defects": [],
-      "revision": "1501f587dbd829ca0959f945913ff468bad275ed"
     }
   ]
 }
