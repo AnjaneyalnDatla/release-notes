@@ -132,3 +132,5 @@ updated=$(echo "$existing" | jq \
 echo "$updated" > prod-release-notes.json
 
 echo "=== Release notes file prod-release-notes.json updated ==="
+
+cat prod-release-notes.json
