@@ -42,7 +42,7 @@ runs:
         fi
     - name: Generate release build release notes
       shell: bash
-      if: startsWith(github.ref_name, 'release/**')
+      if: startsWith(github.ref_name, 'release/')
       env:
         GH_TOKEN: ${{ inputs.GIT_TOKEN }}
         RELEASE_VERSION: ${{ inputs.RELEASE_VERSION }}
