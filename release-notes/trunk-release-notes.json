@@ -2,6 +2,28 @@
   "center": "Policy Center",
   "builds": [
     {
+      "timestamp": "2026-01-10T00:11:48Z",
+      "revision": "3890a0197b1f32f6d48db33fcafe7f9741066b42",
+      "stories": [
+        {
+          "description": "fix: release notes json file",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        },
+        {
+          "description": "fix: Correcting output path",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        },
+        {
+          "description": "fix: Correcting release notes path",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        }
+      ],
+      "defects": []
+    },
+    {
       "timestamp": "2026-01-09T23:54:50Z",
       "revision": "7f2fedcd206294fe00b3a3b05b2fd5cb89988433",
       "stories": [
@@ -67762,40 +67784,6 @@
       ],
       "defects": [],
       "revision": "593709bb2610a303e6e883107f162ad22a2115d8"
-    },
-    {
-      "timestamp": "2025-10-16 04:43:29",
-      "stories": [
-        {
-          "description": "GSS-26341 resolved error on non renewed converted policy",
-          "branch": "",
-          "author": "Iswarya Asokan"
-        },
-        {
-          "description": "GSS-31275 - Added null check on the smartcomm payload function for forms.  This is affecting manually converted policies. (#7121) (#7130)",
-          "branch": "",
-          "author": "Travis Kuhns"
-        },
-        {
-          "description": "GSS-30082_default value added for new buildings added in Renewal (#7128)",
-          "branch": "",
-          "author": "Maddakam Kanchana"
-        }
-      ],
-      "defects": [],
-      "revision": "25203d5044db9360aad7e8d61c6275db02f4add6"
-    },
-    {
-      "timestamp": "2025-10-15 03:47:18",
-      "stories": [
-        {
-          "description": "GSS-28795 Core logic has been modified",
-          "branch": "",
-          "author": "s.sriram"
-        }
-      ],
-      "defects": [],
-      "revision": "a9f76a7c97ba44e9804174f1ace37c66e7801d82"
     }
   ]
 }
