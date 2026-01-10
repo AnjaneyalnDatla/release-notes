@@ -9,7 +9,7 @@ echo "=== Starting release build release notes generation ==="
 # 2. If no previous release, get all commits
 # ============================================================================
 echo "=== Determining commit range ==="
-latest_tag=$(gh release list --limit 1 --json tagName -q '.[0].tagName // ""' 2>/dev/null || echo "")
+latest_tag=$(gh release view --json tagName -q '.tagName // ""' 2>/dev/null || echo "")
 if [ -n "$latest_tag" ]; then
     echo "=== Generating release notes from $latest_tag to current HEAD ==="
     START_REF="$latest_tag"
