@@ -47,4 +47,4 @@ runs:
         GH_TOKEN: ${{ inputs.GIT_TOKEN }}
         RELEASE_VERSION: ${{ inputs.RELEASE_VERSION }}
       run: |
-        bash .github/scripts/generate-release-build-notes.sh
+        bash ${{ github.action_path }}/scripts/generate-release-build-notes.sh
