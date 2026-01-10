@@ -1,8 +1,6 @@
 #!/bin/bash
 set -e
 
-OUTPUT_PATH="release-notes/${OUTPUT_FILE}"
-
 echo "=== Starting daily build release notes generation ==="
 
 # ============================================================================
