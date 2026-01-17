@@ -123,4 +123,6 @@ updated=$(echo "$existing" | jq \
 
 echo "=== Daily release notes saved to ${OUTPUT_FILE} ==="
 
-cat "${OUTPUT_FILE}"
+pwd
+ls -altr
+echo "=== Exiting build script ==="
