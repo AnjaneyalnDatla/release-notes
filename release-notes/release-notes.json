@@ -2,6 +2,53 @@
   "center": "Policy Center",
   "builds": [
     {
+      "timestamp": "2026-01-17T21:14:31Z",
+      "revision": "f0dc4c2cc7d3bd072639e73f221bdfaaae96d45d",
+      "stories": [
+        {
+          "description": "Commit 21",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        },
+        {
+          "description": "Commit 20",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        },
+        {
+          "description": "Commit 19",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        },
+        {
+          "description": "using the PAT token",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        },
+        {
+          "description": "using the PAT token",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        },
+        {
+          "description": "feat: testing bot and rulesets",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        },
+        {
+          "description": "fix: Commit 16",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        },
+        {
+          "description": "fix: Commit 15",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        }
+      ],
+      "defects": []
+    },
+    {
       "timestamp": "2026-01-10T17:14:56Z",
       "revision": "c486f0676042d90e0a10e1ab11023a95361aef24",
       "stories": [
@@ -67767,23 +67814,6 @@
       ],
       "defects": [],
       "revision": "0352fcc7f015b2a6157639a2d3efe52fa9758d46"
-    },
-    {
-      "timestamp": "2025-10-29 03:46:57",
-      "stories": [
-        {
-          "description": "GSS-27114 - Combine Insurview and Insurance Score(NCF) calls _PO - Lo… (#7235)",
-          "branch": "(HEAD, origin/release/4.9.0)",
-          "author": "Pavani Raghupathi"
-        },
-        {
-          "description": "GSS-31195 - Changing the logger level for the sync field issue (#7173)",
-          "branch": "",
-          "author": "Avik Chatterjee"
-        }
-      ],
-      "defects": [],
-      "revision": "bf2f126f01b22694718ea52c9de58c14a7ccaa66"
     }
   ]
 }
