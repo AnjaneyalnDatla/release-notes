@@ -7,9 +7,9 @@ on:
   #     - 'release/**'
   workflow_dispatch:
 
-# permissions:
-#   contents: write  # Need write permission to commit back to repo
-#   pull-requests: read  # Need to read PR information
+permissions:
+  contents: write  # Need write permission to commit back to repo
+  pull-requests: read  # Need to read PR information
 
 jobs:
   generate-release-notes:
