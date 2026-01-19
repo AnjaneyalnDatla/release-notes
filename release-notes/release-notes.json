@@ -2,6 +2,55 @@
   "center": "Policy Center",
   "builds": [
     {
+      "timestamp": "2026-01-19T17:14:40Z",
+      "revision": "cef49ebe4479fb24f6229828871b11349d5ecadc",
+      "stories": [],
+      "defects": []
+    },
+    {
+      "timestamp": "2026-01-18T16:38:40Z",
+      "revision": "9dbfa666e6823fe4dd78a83e5ca965479e06e003",
+      "stories": [],
+      "defects": []
+    },
+    {
+      "timestamp": "2026-01-18T15:58:33Z",
+      "revision": "d73c0c605686a14ef67d705b2e93624b9ae273e0",
+      "stories": [
+        {
+          "description": "Commit 23.3",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        },
+        {
+          "description": "Commit 23.2",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        },
+        {
+          "description": "Commit 23.1",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        },
+        {
+          "description": "Commit 23",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        },
+        {
+          "description": "Commit 23",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        },
+        {
+          "description": "Commit 22",
+          "branch": "main",
+          "author": "anjaneya.datla@fbitn.com"
+        }
+      ],
+      "defects": []
+    },
+    {
       "timestamp": "2026-01-17T21:17:34Z",
       "revision": "84b54aadea743189a5e82d4bfb77e385793f6c18",
       "stories": [
@@ -67723,82 +67772,6 @@
       ],
       "defects": [],
       "revision": "9231da8e4addf44e252d97ea7017b05a854a7fb3"
-    },
-    {
-      "timestamp": "2025-11-05 03:47:07",
-      "stories": [
-        {
-          "description": "GSS-31568:Special Class Additional Interest changes not displaying under Policy Changes and triggering error (#7297)",
-          "branch": "(HEAD, origin/release/4.9.0)",
-          "author": "Chirivella Sreeja"
-        },
-        {
-          "description": "GSS-31138: Effective date of the deductible rates should be set as 9/30/2025, for the unretired ones 25k, 50K & 75K originally fixed as part of GSS-28394. (#7300)",
-          "branch": "",
-          "author": "Pavani Raghupathi"
-        },
-        {
-          "description": "GSS-31177_updated (#7298)",
-          "branch": "",
-          "author": "Maddakam Kanchana"
-        },
-        {
-          "description": "GSS-31191 : PO_Policy Change transaction_unable to add multiple additional interests to TF27 - Blanket Farm (#7244)",
-          "branch": "",
-          "author": "Chirivella Sreeja"
-        },
-        {
-          "description": "GSS-31193 : Value Up should be Yes on converted policy after completed policy change to update Division Type (#7291)",
-          "branch": "",
-          "author": "Chirivella Sreeja"
-        },
-        {
-          "description": "GSS:31568:Special Class Additional Interest changes not displaying under Policy Changes and triggering error (#7289)",
-          "branch": "",
-          "author": "Chirivella Sreeja"
-        },
-        {
-          "description": "GSS-26397 : Updates to Manual Prior Loss process for PO-Revert (#7199)",
-          "branch": "",
-          "author": "Chirivella Sreeja"
-        }
-      ],
-      "defects": [],
-      "revision": "8fc76ce49abea14657c34ab22e43f1689395c4e4"
-    },
-    {
-      "timestamp": "2025-11-04 03:46:47",
-      "stories": [
-        {
-          "description": "GSS-31403 - For class code 13930 and the dropdown for coverage is empty (#7280)",
-          "branch": "(HEAD, origin/release/4.9.0)",
-          "author": "Vishnu Thota"
-        }
-      ],
-      "defects": [],
-      "revision": "475a7f300aa612e8751c204e382119a71b8d9a34"
-    },
-    {
-      "timestamp": "2025-10-31 03:46:16",
-      "stories": [
-        {
-          "description": "GSS-31199 Added condition to filter out forms that are removed during change",
-          "branch": "",
-          "author": "Shirisha.Devarakonda"
-        },
-        {
-          "description": "GSS-31199 Added condition to filter out forms that are removed during change",
-          "branch": "",
-          "author": "Shirisha.Devarakonda"
-        },
-        {
-          "description": "GSS-26341 changes to have renewal effective date",
-          "branch": "",
-          "author": "Iswarya Asokan"
-        }
-      ],
-      "defects": [],
-      "revision": "25e231683f8e5ec4ec1aa0dc42af4f2bb88d0fcc"
     }
   ]
 }
